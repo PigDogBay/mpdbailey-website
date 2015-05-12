@@ -33,7 +33,91 @@
 </div>
 
 <div class="container">
+	<div class="title">
+		<a id="PCSoftware"><h2>PC Software</h2></a>
+	</div>
+	<div class="wrapper">
+		<p>
+		For complex products a PC application is the best way to interface with your equipment or data. Desktop Windows applications allow for rich user interfaces and can process large amounts of information.
+		</p>
+		<br/>
+		<h3>Case Study</h3>
+		<br/>
+		<img src="images/PrimeCal.png" alt="Prime Calibration Screenshot" />
+		<br/>
+		<br/>
+		<p>
+		Recently a client required PC software for their new range of life science laboratory equipment. The software needed to accurately calibrate the temperature measurement of the equipment, automate a lengthy verification procedure and produce a printable calibration certificate.
+		</p>
+		<p>
+		The software was written in C# 4.0 using Visual Studio 2013, the user interface was created using WPF to provide a stylish and professional look. MSI installers were created to distribute the software.
+		</p>
+	</div>
     	
+	<div class="title">
+		<a id="Embedded"><h2>Embedded Software</h2></a>
+	</div>
+	<div class="wrapper">
+		<p>
+		To offer your customers a better user experience an embedded computer with a hi-resolution touch screen is required. Embedded software is written using modern tools such as Visual Studio, written in languages such as C# or Java and run on top of an operating system such as Windows CE, Linux or Android. An embedded application will typically communicate with the low-level electronics using an RS232 connection.
+		</p>
+		<br/>
+		<h3>Case Studies</h3>
+		<br/>
+		<br/>
+		<br/>
+		<img src="images/Melting5.png" width="640" height="480" alt="Automatic Melting Point" />
+		<br/>
+		<br/>
+		<p>
+		The Stuart SMP40 is an advanced laboratory apparatus that uses a camera and image processing to determining the melting point of a chemical sample. The code was written in C# and runs on a Windows CE 5.0 embedded computer. The embedded app controls the camera, processes images, records the images as video and communicates to the low-level heater electronics.
+		</p>
+		<br/>
+		<br/>
+		<br/>
+		<img src="images/Thor.png" alt="Thor Screenshot" />
+		<br/>
+		<br/>
+		<p>
+		Thor is an Android Application to test the heating electronics for a laboratory instrument. The code was written in Java using Eclipse and the Android SDK. An open source project was used for the Serial Port communications to the electronics.
+		</p>
+
+	</div>
+	<div class="title">
+		<a id="apps"><h2>Android / iOS Apps</h2></a>
+	</div>
+	<div class="wrapper">
+		<p>
+		Mobile platforms now have the largest user base, reaching out to your users today will require either a website designed for mobile devices or a native app.  You may need an app to compliment your product, your website or to drive your business. We have published many apps over the years, below are several case studies.
+		</p>
+		<br/>
+		<h3>Case Studies</h3>
+		<br/>
+		<br/>
+		<br/>
+		<img src="images/report-crop.png" alt="Weight Tracker Report" />
+		<img src="images/chart-crop.png" alt="Weight Tracker Chart" />
+		<br/>
+		<br/>
+		<p>
+		Weight Tracker is an Android App that lets users monitor their diets by recording their daily weigh ins. Data is stored in a local MySQL database and the user has access to reports and charts that provide trend and statistical analysis.
+		</p>
+		<p>
+		The app employs Google Analytics to measure anonymous usage statistics which helps us to improve the user experience. You can download the app from the 
+		<a href="http://play.google.com/store/apps/details?id=com.pigdogbay.weightrecorder">Google Play Store.</a> 
+		</p>
+		<br/>
+		<br/>
+		<br/>
+		<img src="images/tips.png" alt="Anagram Solver Tips" />
+		<img src="images/crosswords.png" alt="Anagram Solver Crosswords" />
+		<br/>
+		<br/>
+		<p>
+		Anagram Solver is an iOS App for both iPhone and iPad, it is written in Apple's new programming language Swift. You can download the app from the <a href="http://itunes.apple.com/app/id973923699">App Store.</a>
+		</p>
+	</div>
+
 	<div class="title">
 		<a id="Firmware"><h2>Firmware</h2></a>
 	</div>
@@ -46,50 +130,20 @@
 		<br/>
 		<h3>Case Study</h3>
 		<br/>
-		<p>
-		The Techne Dri-Block is a laboratory instrument providing a wide range of temperatures. The electronics uses a Platinum Resistance Thermometer with a 20 bit ADC that delivers precise temperature measurements. The temperature is controlled using a PID controller algorithm which has been tuned to deliver 
-		a temperature stability within +/-0.1C. 
-		</p>
-	</div>
-	<div class="title">
-		<a id="Embedded"><h2>Embedded Software</h2></a>
-	</div>
-	<div class="wrapper">
-		<p>
-		To offer your customers a better user experience an embedded computer with a hi-resolution touch screen is required. Embedded software is written using modern tools such as Visual Studio, written in languages such as C# or Java and run on top of an operating system such as Windows CE, Linux or Android. An embedded application will typically communicate with the low-level electronics using an RS232 connection.
-		</p>
+		<img src="images/dri-block.jpg" alt="Dri-Block" />
 		<br/>
-		<h3>Case Study</h3>
 		<br/>
 		<p>
-		The Stuart SMP40 is an advanced laboratory apparatus that uses a camera and image processing to determining the melting point of a chemical sample. The code was written in C# and runs on a Windows CE 5.0 embedded computer. The embedded app controls the camera, processes images, records the images as video and communicates to the low-level heater electronics.
+		A Dri-Block is a laboratory instrument providing a wide range of temperatures. The electronics uses a Platinum Resistance Thermometer with a 20 bit ADC that delivers precise temperature measurements. The temperature is controlled using a PID controller algorithm which has been tuned to deliver 
+		a temperature stability within +/-0.1C.  Temperature is displayed on 5 multiplexed 7-seg displays and 4 touch buttons are used to program the device.
 		</p>
-
-	</div>
-	<div class="title">
-		<a id="PCSoftware"><h2>PC Software</h2></a>
-	</div>
-	<div class="wrapper">
 		<p>
-		For more complex products a PC application is the best way to interface with your equipment. Desktop Windows applications allow for rich user interfaces and can process huge amounts of information.
+		The code was written in embedded C for a Microchip PIC microcontroller.
 		</p>
-		<br/>
-		<h3>Case Study</h3>
-		<br/>
-		<p>
-		Techne produce a range of Thermal Cyclers which are used within the medical industry to replicate DNA. Thermal cyclers require precise temperature measurement and so sophisticated temperature calibration is used during manufacture. PC software fully automates the lengthy calibration process, produces an audit and calibration certificate at the end.
-		</p>
-	</div>
-	<div class="title">
-		<h2>Android Apps</h2>
-	</div>
-	<div class="wrapper">
-		<p>
-		Why not compliment your product with an Android App that allows users to upload results to their phone. By adding a wi-fi or bluetooth module to your product you can connect over the air to a phone or tablet. 
-		</p>
+		
 	</div>
 
-
+	
 </div>
 </body>
 </body>
