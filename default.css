@@ -188,7 +188,9 @@
 	.image-centered
 	{
 		display: block;
-		margin: 0 0 2em 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
 	}
 	
 	.image-centered img

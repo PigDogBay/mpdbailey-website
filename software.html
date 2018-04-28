@@ -32,6 +32,61 @@
 </div>
 
 <div class="container">
+
+		<div class="title">
+				<a id="Embedded"><h2>Embedded Software</h2></a>
+			</div>
+			<div class="wrapper">
+				<p>
+				Users today expect equipment to come with a hi-resolution display and touch screen controls powered by an embedded computer.
+				Embedded software is written using modern tools and languages allowing for rapid development and runs on top of an operating system such as Linux. 
+				An embedded computer will typically communicate with the low-level electronics using an RS232 connection.
+				</p>
+				<br/>
+				<h3>Case Study, Cell Separator from Deparator</h3>
+				<br/>
+				<br/>
+				<br/>
+				<img src="images/deparator.png" alt="DEP Cell Separator" class="image-centered"/>
+				<br/>
+				<br/>
+				<br/>
+				<p>
+				The DEP Cell Separator from Deparator uses an oscillating electric field to sort T cells for use in cancer treatment. 
+				Here I wrote the both the firmware and embedded software. 
+				The firmware was written in C for an Atmel Atmega328p using the gcc-avr compiler. The software was written in Java using
+				Android Studio, using the very latest Android Things OS running on a Raspberry Pi 3.
+				</p>
+				<br/>
+				<br/>
+				<br/>
+				<h3>Case Study, the SMP50 from Cole Parmer</h3>
+				<br/>
+				<br/>
+				<br/>
+				<img src="images/SMP50.jpg" alt="SMP50 Automatic Melting Point" class="image-centered"/>
+				<br/>
+				<br/>
+				<p>
+				The SMP50 is an advanced laboratory apparatus that uses a camera and image processing to determining the melting point of a chemical sample. 
+				The embedded app controls the camera, processes images, records the images as video and communicates to the low-level heater electronics.
+				The code was written in Java using Android Studio and runs on a Android embedded computer. Due to the real time image processing requirements, I had to 
+				write a C++ image driver, using the NDK to interface with the low level Video4Linux driver.
+				</p>
+				<br/>
+				<br/>
+				<img src="images/thor-melting.png" alt="Thor melting point test" class="image-centered"/>
+				<br/>
+				<br/>
+				<img src="images/Thor.png" alt="Thor heater controls" class="image-centered"/>
+				<br/>
+				<br/>
+				<p>
+				As well as writing the back end code for the camera driver, image processing, image recording and serial port comms to the heater electronics, 
+				Cole Parmer also required me to develop a production application for the SMP50 for testing, calibration and servicing
+				</p>
+			</div>
+		
 	<div class="title">
 		<a id="PCSoftware"><h2>PC Software</h2></a>
 	</div>
@@ -49,39 +104,10 @@
 		Recently a client required PC software for their new range of life science laboratory equipment. The software needed to accurately calibrate the temperature measurement of the equipment, automate a lengthy verification procedure and produce a printable calibration certificate.
 		</p>
 		<p>
-		The software was written in C# 4.0 using Visual Studio 2013, the user interface was created using WPF to provide a stylish and professional look. MSI installers were created to distribute the software.
+		The software was written in C# using Visual Studio, the user interface was created using WPF to provide a stylish and professional look. MSI installers were created to distribute the software.
 		</p>
 	</div>
     	
-	<div class="title">
-		<a id="Embedded"><h2>Embedded Software</h2></a>
-	</div>
-	<div class="wrapper">
-		<p>
-		To offer your customers a better user experience an embedded computer with a hi-resolution touch screen is required. Embedded software is written using modern tools such as Visual Studio, written in languages such as C# or Java and run on top of an operating system such as Windows CE, Linux or Android. An embedded application will typically communicate with the low-level electronics using an RS232 connection.
-		</p>
-		<br/>
-		<h3>Case Studies</h3>
-		<br/>
-		<br/>
-		<br/>
-		<img src="images/Melting5.png" width="640" height="480" alt="Automatic Melting Point" />
-		<br/>
-		<br/>
-		<p>
-		The Stuart SMP40 is an advanced laboratory apparatus that uses a camera and image processing to determining the melting point of a chemical sample. The code was written in C# and runs on a Windows CE 5.0 embedded computer. The embedded app controls the camera, processes images, records the images as video and communicates to the low-level heater electronics.
-		</p>
-		<br/>
-		<br/>
-		<br/>
-		<img src="images/Thor.png" alt="Thor Screenshot" />
-		<br/>
-		<br/>
-		<p>
-		Thor is an Android Application to test the heating electronics for a laboratory instrument. The code was written in Java using Eclipse and the Android SDK. An open source project was used for the Serial Port communications to the electronics.
-		</p>
-
-	</div>
 	<div class="title">
 		<a id="apps"><h2>Android / iOS Apps</h2></a>
 	</div>
