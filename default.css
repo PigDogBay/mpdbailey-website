@@ -192,6 +192,12 @@
 		margin-right: auto;
 		width: auto;
 	}
+	.image-centered-no-width
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	.image-centered img
 	{
