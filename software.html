@@ -118,7 +118,7 @@
 		<br/>
 		<br/>
 		<p>
-		Here I was required to add new features to an existing application for Cole Palmer 7200 Diode Array Spectrophotometer. 
+		Here I was required to add new features to an existing application for the Cole Palmer 7200 Diode Array Spectrophotometer. 
 		The desktop application is written in C++ using Qt Creator and using the Qt framework.
 		</p>
 		<br/>
@@ -169,26 +169,36 @@
 
 	<div class="wrapper">
 		<p>
-		Firmware is the software that runs on the electronics inside your product. The firmware performs functions such as displaying information on a LCD, handling button presses, controlling motors, measuring temperature and processing communications such as RS232 or USB. Our particular expertise is 
-		with the Microchip PIC family of microcontrollers and we can offer help with your electronic design.
+		Firmware is the software that runs on the electronics inside your product. 
+		The firmware performs functions such as displaying information on a LCD, handling button presses, controlling motors, measuring temperature and processing communications such as RS232 or USB. 
+		I have written firmware for many different architectures over the years including, PIC. Atmel, H8 and Arm.
 		</p>
 		<br/>
 		<h3>Case Study</h3>
 		<br/>
-		<img src="images/dri-block.jpg" alt="Dri-Block" />
+		<img src="images/7200_open.jpg" alt="Jenway 7205 UV Diode Array" class="image-centered"/>
 		<br/>
 		<br/>
 		<p>
-		A Dri-Block is a laboratory instrument providing a wide range of temperatures. The electronics uses a Platinum Resistance Thermometer with a 20 bit ADC that delivers precise temperature measurements. The temperature is controlled using a PID controller algorithm which has been tuned to deliver 
-		a temperature stability within +/-0.1C.  Temperature is displayed on 5 multiplexed 7-seg displays and 4 touch buttons are used to program the device.
+		A spectrophotometer uses a motor to move a grating to select a narrow wavelength of light which then passes through a sample and finally measures the amount of light hitting a diode sensor.
+		To read a whole spectrum of wavelengths, from 185nm to 800nm can take 10 minutes or more.
 		</p>
 		<p>
-		The code was written in embedded C for a Microchip PIC microcontroller.
+		The Jenway 7205 UV Diode Array from Cole Parmer is a spectrophotometer that can measure a whole spectrum of wavelengths in one go, by using an array 1024 diode sensors. 
+		All the light from the xenon lamp is passed through the sample and then refracted on to the sensor array. 
+		High speed electronics is then needed to quickly read off the ADC values from the 1024 diode sensors analogue video signal.
 		</p>
-		
+		<p>
+		I was origianally hired to help complete the firmare for 7200 model which used an LED and halogen lamp. 
+		For the 7205 I had to rewrite a lot of the firmware to work with a xenon flash lamp, as the lamp output is very low at the lower and higher ends of the spectrum.
+		The 7205 uses the actual output of the xeonon lamp to self calibrate its diode to wavelength mapping, the 7200 required a didymium sample measurement.
+		The code was written in C for a STM32 ARM chip using Eclipse and tools from OpenSTM.
+		</p>
+		<p>
+		<i>Note that the touch screen display is controlled by a PIC MCU and the firmware for this was written by another engineer. 
+		The two control boards used an UART to communicate, the ARM control board also communicated to a PC application (see above) via USB</i>
+		</p>
 	</div>
-
-	
 </div>
 </body>
 </body>
