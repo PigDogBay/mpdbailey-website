@@ -47,15 +47,15 @@
 				<br/>
 				<br/>
 				<br/>
-				<img src="images/deparator.png" alt="DEP Cell Separator" class="image-centered"/>
+				<a href="https://deparator.com"><img src="images/deparator.png" alt="DEP Cell Separator" class="image-centered"/></a>
 				<br/>
 				<br/>
 				<br/>
 				<p>
 				The DEP Cell Separator from Deparator uses an oscillating electric field to sort T cells for use in cancer treatment. 
 				Here I wrote both the firmware and embedded software. 
-				The firmware was written in C for an Atmel Atmega328p using the gcc-avr compiler. The software was written in Java using
-				Android Studio, using the very latest Android Things OS running on a Raspberry Pi 3.
+				The firmware was written in C for an Atmel Atmega328p using the avr-gcc compiler. The software was written in Java and Kotlin using
+				Android Studio, using the Android Things OS running on a Raspberry Pi 3.
 				</p>
 				<br/>
 				<br/>
@@ -64,13 +64,13 @@
 				<br/>
 				<br/>
 				<br/>
-				<img src="images/SMP50.jpg" alt="SMP50 Automatic Melting Point" class="image-centered"/>
+				<a href="http://www.stuart-equipment.com/product.asp?dsl=9139"><img src="images/SMP50.jpg" alt="SMP50 Automatic Melting Point" class="image-centered"/></a>
 				<br/>
 				<br/>
 				<p>
 				The SMP50 is an advanced laboratory apparatus that uses a camera and image processing to determining the melting point of a chemical sample. 
 				The embedded app controls the camera, processes images, records the images as video and communicates to the low-level heater electronics.
-				The code was written in Java using Android Studio and runs on a Android embedded computer. Due to the real time image processing requirements, I had to 
+				The code was written in Java using Android Studio and runs on an Android embedded computer. Due to the real time image processing requirements, I had to 
 				write a C++ image driver, using the NDK to interface with the low level Video4Linux driver.
 				</p>
 				<br/>
@@ -92,12 +92,12 @@
 				<br/>
 				<br/>
 				<br/>
-				<img src="images/jenway7415.jpg" alt="Jenway 7415 Spectrophotometer" class="image-centered"/>
+				<a href="http://www.jenway.com/product.asp?dsl=9214"><img src="images/jenway7415.jpg" alt="Jenway 7415 Spectrophotometer" class="image-centered"/></a>
 				<br/>
 				<br/>
 				<p>
-				This product used the same embedded computer as the SMP50 above but was required to control a much more complex set of electronics that controls a spectrophotometer.
-				Here I was required to write a Android Service and library for handling the serial communications to the spectro electronics and also a production app for testing and calibrating the device.
+				This product used the same embedded computer as the SMP50 above but here controlled a spectrophotometer.
+				I was required to write an Android Service and library for handling the serial communications to the spectro electronics and also a production app for testing and calibrating the device.
 				</p>	
 			</div>
 		
@@ -108,7 +108,7 @@
 		<p>
 		For complex products a PC application is the best way to interface with your equipment or data. 
 		Desktop Windows applications allow for rich user interfaces and can process large amounts of information.
-		Even if your product has an touch screen display, a PC application is usually necessary for setting up, servicing, testing and calibrating the device.
+		Even if your product has a touch screen display, a PC application is usually necessary for setting up, servicing, testing and calibrating the device.
 		</p>
 		<br/>
 		<h3>Case Study Diode Array PC App</h3>
@@ -140,7 +140,7 @@
 	</div>
 	<div class="wrapper">
 		<p>
-		Mobile platforms now have the largest user base, reaching out to your users today will require either a website designed for mobile devices or a native app.  You may need an app to compliment your product, your website or to drive your business. I have published many apps over the years, below are several apps I have published.
+		Mobile platforms now have the largest user base, reaching out to your users today will require either a website designed for mobile devices or a native app.  You may need an app to compliment your product, your website or to drive your business. I have published many apps over the years, below are several successful apps I have published.
 		</p>
 		<br/>
 		<img src="images/as-iphone.png" alt="iOS Anagram Solver Tips" />
@@ -148,7 +148,7 @@
 		<br/>
 		<br/>
 		<p>
-		Anagram Solver is a popular app both for iOS and Android. The iOS version is written in Swift using Xcode and the Android version version if written in Java using Android Studio.
+		Anagram Solver is a popular app both for iOS and Android. The iOS version is written in Swift using Xcode and the Android version version is written in Java using Android Studio.
 		You can download the app from the <a href="https://itunes.apple.com/app/id973923699">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.pigdogbay.anagramsolver">Play Store</a>
 		</p>
 		<br/>
@@ -158,7 +158,7 @@
 		<br/>
 		<p>
 		Food Hygiene Ratings app queries the FSA database for food hygiene ratings of nearby businesses and is available for both Android and iOS. 
-		The app uses location services, geocaching, mapping and FSA web api.
+		The app uses location services, geocaching, mapping and the FSA's web API.
 		You can download the app from the <a href="https://itunes.apple.com/app/id1213783338">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.pigdogbay.foodhygieneratings">Play Store</a>
 		</p>
 	</div>
@@ -176,7 +176,7 @@
 		<br/>
 		<h3>Case Study</h3>
 		<br/>
-		<img src="images/7200_open.jpg" alt="Jenway 7205 UV Diode Array" class="image-centered"/>
+		<a href="http://www.jenway.com/product.asp?dsl=9171"><img src="images/7200_open.jpg" alt="Jenway 7205 UV Diode Array" class="image-centered"/></a>
 		<br/>
 		<br/>
 		<p>
@@ -186,7 +186,7 @@
 		<p>
 		The Jenway 7205 UV Diode Array from Cole Parmer is a spectrophotometer that can measure a whole spectrum of wavelengths in one go, by using an array 1024 diode sensors. 
 		All the light from the xenon lamp is passed through the sample and then refracted on to the sensor array. 
-		High speed electronics is then needed to quickly read off the ADC values from the 1024 diode sensors analogue video signal.
+		High speed electronics is then needed to quickly read off the ADC values from the 1024 diode sensors' analogue video signal.
 		</p>
 		<p>
 		I was origianally hired to help complete the firmare for 7200 model which used an LED and halogen lamp. 
